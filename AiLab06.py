@@ -1,4 +1,4 @@
-# Tower of Hanoi?
+# Tower of Hanoi
 
 def TowerOfHanoi(n , source, destination, auxiliary):
 	if n==1:

@@ -1,10 +1,10 @@
-# Using in-built functions
+# TASK 01 - Using in-built functions
 mylist = [3, 1, 5, 2, 7, 9, 4]
 print('Task01')
 print("Minimum value:", min(mylist))
 print("Maximum value:", max(mylist))
 
-# Without using in-built functions.
+# TASK 02 - Without using in-built functions.
 mylist = [3, 1, 5, 2, 7, 9, 4]
 minVal = maxVal = mylist[0]
 for i in range(len(mylist)-1):
@@ -16,16 +16,16 @@ print('Task02')
 print("Minimum value:", minVal)
 print("Maximum value:", maxVal)
 
-# Linear Search 
-# def linear_search(array, target):
-#     for i in range(len(array)):
-#         if array[i] == target:
-#             print("Target is found at index ", i)
+# TASK 03 - Linear Search 
+def linear_search(array, target):
+    for i in range(len(array)):
+        if array[i] == target:
+            print("LINEAR SEARCH => Target is found at index ", i)
 
 
-# array = [2, 4, 0, 1, 9]
-# target = 1
-# result = linear_search(array, target)
+arrayUnsort = [2, 4, 0, 1, 9, 5]
+target = 5
+result = linear_search(arrayUnsort, target)
 
 # Binary Search
 def binary_search(array, target):
@@ -43,7 +43,6 @@ def binary_search(array, target):
     return None
 
 arraySorted = [0, 1, 2, 4, 5, 8, 9]
-target = 5
 result = binary_search(arraySorted, target)
 
 if result is not None:
