@@ -1,3 +1,5 @@
+# Program to implement BFS. 
+
 graph = {
   '5' : ['3','7'],
   '3' : ['2', '4'],
